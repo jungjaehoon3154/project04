@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+/* section common */
+#container section{color: #fff;}
+.inner{padding: 0 210px;}
+.tit_top{font-weight: 700;font-size: 22px;margin-bottom: 10px;}
+.tit{font-size: 71px;line-height: 1.1;}
+.txt{font-weight: 300;font-size: 21px;line-height: 30px;margin-top: 27px;}
+.btn_more{display: inline-block;margin-top: 40px;font-family: "맑은 고딕", "Malgun Gothic", "애플 SD 산돌고딕 Neo", "Apple SD Gothic Neo", sans-serif;width: 170px;height: 46px;box-sizing: border-box;text-align: center;line-height: 44px;border-radius: 50px;}
+.btn_more.whitetype{color: #fff;border: 1px solid #fff;}
+.btn_more.darktype{color: #222;border: 1px solid #222;}
+.btn_more:hover, .btn_more:focus{border-color: #f25130;background: linear-gradient(to right, #ff8933, #ea2e2e);color: #fff;}
+.tit_top, .tit, .txt, #cnt2 .btn_more, #cnt5 .btn_more, #cnt6 .btn_more, .rbox li, .sns_list{position: relative;top: 100px;opacity: 0;}
+
+/* #cnt1 */
+#cnt1 .swiper-container{height: 100vh;}
+#cnt1 .swiper-container .swiper-slide{display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;align-items: center;background: no-repeat center top;background-size: cover;padding-left: 210px;box-sizing: border-box;}
+#cnt1 .swiper-container .slide1{background-image: url("../images/main/hmg-main-visual-img-001.jpg");}
+#cnt1 .swiper-container .slide2{background-image: url("../images/main/hmg-main-visual-img-002.jpg");}
+#cnt1 .swiper-container .slide3{background-image: url("../images/main/hmg-main-visual-img-003.jpg");}
+#cnt1 .swiper-container .slide4{background-image: url("../images/main/hmg-main-visual-img-004.jpg");}
+#cnt1 .swiper-container .slide5{background-image: url("../images/main/hmg-main-visual-img-005.jpg");}
+#mainVideo{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);width: auto;height: auto;min-width: 100%;min-height: 100%;}
+#cnt1 .txt_wrap h3{font-size: 82px;line-height: 1.1;}
+#cnt1 .txt_wrap p{font-family: "맑은 고딕", "Malgun Gothic", "애플 SD 산돌고딕 Neo", "Apple SD Gothic Neo", sans-serif;font-size: 18px;line-height: 1.4;padding-top: 25px;}
+#cnt1 .controller{left: 210px;bottom: 130px;width: 280px;height: 70px;z-index: 10;}
+#cnt1 .controller > div, #cnt1 .controller button{position: absolute;width: 60px;height: 60px;top: 5px;background: url("../images/icon/sp-hmg-pc-basic-large.png") no-repeat;}
+#cnt1 .controller .swiper-pagination{left: 75px;line-height: 60px;text-align: center;background: none;}
+#cnt1 .controller .swiper-pagination .swiper-pagination-current{font-size: 1.3em;}
+#cnt1 .controller div.circle_wrap{margin-top: 0;}
+#cnt1 .controller .swiper-button-prev{background-position: -900px -100px;left: 5px;}
+#cnt1 .controller .swiper-button-next{background-position: -1100px -100px;right: 75px;}
+#cnt1 .controller .swiper-button-prev:hover, #cnt1 .controller .swiper-button-prev:focus{background-position: -1000px -100px;}
+#cnt1 .controller .swiper-button-next:hover, #cnt1 .controller .swiper-button-next:focus{background-position: -1200px -100px;}
+#cnt1 .controller .swiper-button-prev:after, #cnt1 .controller .swiper-button-next:after{display: none;}
+#cnt1 .controller .stop_play{right: 5px;}
+#cnt1 .controller .btn_stop{background-position: -500px -100px;}
+#cnt1 .controller .btn_play{display: none;background-position: -700px -100px;}
+#cnt1 .controller .btn_stop:hover, #cnt1 .controller .btn_stop:focus{background-position: -600px -100px;}
+#cnt1 .controller .btn_play:hover, #cnt1 .controller .btn_play:focus{background-position: -800px -100px;}
+
+/* #cnt2 */
+#cnt2{padding: 235px 0;background: #f5f5f5;color: #222 !important;}
+#cnt2 .txt{color: #6c6c6c;}
+.rbox{display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;padding-top: 100px;}
+.rbox li{position: relative;background: no-repeat center top;background-size: cover;}
+.rbox li::after{content: "";display: block;}
+#cnt3 .academy_list li::after{padding-bottom: 130%;}
+#cnt4 .pleasure_list li::after{padding-bottom: 167%;}
+.rbox li a{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.rbox li a div{position: absolute;}
+.rbox li a div h3{font-size: 40px;}
+.rbox li a div .btn_more{position: relative;top: 100px;opacity: 0;transition: all 0.3s;}
+.rbox li a:hover div .btn_more, .rbox li a:focus div .btn_more{top: 0;opacity: 1;}
+
+/* #cnt3 */
+#cnt3{padding: 220px 0;}
+#cnt3 .academy_list li{width: 31.4%;}
+#cnt3 .academy_list li + li{margin-left: 2.9%;}
+#cnt3 .academy_list li:nth-child(1){background-image: url("../images/main/hmg-main-academy-img-001.jpg");}
+#cnt3 .academy_list li:nth-child(2){background-image: url("../images/main/hmg-main-academy-img-002.jpg");}
+#cnt3 .academy_list li:nth-child(3){background-image: url("../images/main/hmg-main-academy-img-003.jpg");}
+#cnt3 .academy_list li a{transition: background 0.3s}
+#cnt3 .academy_list li a:hover, #cnt3 .academy_list li a:focus{background: rgba(0,0,0,.2);}
+#cnt3 .academy_list li a div{top: 8%;left: 2.5vw;text-align: left;}
+#cnt3 .academy_list li a div h3{padding-bottom: 10px;}
+#cnt3 .academy_list li a div  p{font-size: 22px;}
+
+/* #cnt4 */
+#cnt4{padding-top: 220px;background: url("../images/main/main-section04-bg.jpg") no-repeat center top;background-size: cover;}
+#cnt4 .pleasure_list li{width: 25%;}
+#cnt4 .pleasure_list li:nth-child(1){background-image: url("../images/main/hmg-main-pleasure-img-001.jpg");}
+#cnt4 .pleasure_list li:nth-child(2){background-image: url("../images/main/hmg-main-pleasure-img-002.jpg");}
+#cnt4 .pleasure_list li:nth-child(3){background-image: url("../images/main/hmg-main-pleasure-img-003.jpg");}
+#cnt4 .pleasure_list li:nth-child(4){background-image: url("../images/main/hmg-main-pleasure-img-004.jpg");}
+#cnt4 .pleasure_list li a{background: rgba(0, 0, 0, .5);transition: background 0.3s;}
+#cnt4 .pleasure_list li a:hover, #cnt4 .pleasure_list li a:focus{background: rgba(0, 0, 0, 0);}
+#cnt4 .pleasure_list li a div{width: 100%;padding: 0 56px;box-sizing: border-box;top: 50%;transform: translateY(-50%);}
+#cnt4 .pleasure_list li a div p{position: relative;top: 100px;font-family: "맑은 고딕", "Malgun Gothic", "애플 SD 산돌고딕 Neo", "Apple SD Gothic Neo", sans-serif;font-size: 18px;line-height: 0;opacity: 0;margin-top: 0;transition: all 0.3s;}
+#cnt4 .pleasure_list li a:hover div p, #cnt4 .pleasure_list li a:focus div p{top: 0;opacity: 1;line-height: 1.5;margin-top: 40px;}
+#cnt4 .pleasure_list li a .btn_more{transition-delay: 0.1s;margin-top: 0;}
+#cnt4 .pleasure_list li a:hover .btn_more, #cnt4 .pleasure_list li a:focus .btn_more{margin-top: 40px;}
+
+/* #cnt5 */
+#cnt5{position: relative;overflow: hidden;padding-top: 223px;height: 100vh;box-sizing: border-box;}
+.nFestival_bg{top: 0;left: 50%;transform: translateX(-50%);width: 100%;height: 100%;background: url("../images/main/hmg-main-n-festival-bg.jpg") no-repeat center;background-size: cover;z-index: -1;transition: all 0.3s;}
+#cnt5 .tit_top{padding-top: 20px;}
+
+/* #cnt6 */
+#cnt6{padding: 220px 0 200px;}
+#cnt6 .sns_list{padding-top: 56px;flex-wrap: wrap;}
+#cnt6 .sns_list li{position: relative;width: 25%;background: no-repeat center;background-size: cover;}
+#cnt6 .sns_list li:nth-child(1){background-image: url("../../sns-file/sns1.jpg");}
+#cnt6 .sns_list li:nth-child(2){background-image: url("../../sns-file/sns2.jpg");}
+#cnt6 .sns_list li:nth-child(3){background-image: url("../../sns-file/sns3.jpg");}
+#cnt6 .sns_list li:nth-child(4){background-image: url("../../sns-file/sns4.jpg");}
+#cnt6 .sns_list li:nth-child(5){background-image: url("../../sns-file/sns5.jpg");}
+#cnt6 .sns_list li:nth-child(6){background-image: url("../../sns-file/sns6.jpg");}
+#cnt6 .sns_list li:nth-child(7){background-image: url("../../sns-file/sns7.jpg");}
+#cnt6 .sns_list li:nth-child(8){background-image: url("../../sns-file/sns8.jpg");}
+#cnt6 .sns_list li::before{content: "";padding-top: 100%;display: block;}
+#cnt6 .sns_list li a{display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;position: absolute;top: 0;left: 0;width: 100%;height: 100%;align-items: center;background: rgba(0,0,0,.8);opacity: 0;transition: opacity 0.3s;}
+#cnt6 .sns_list li a:hover, #cnt6 .sns_list li a:focus{opacity: 1;}
+#cnt6 .sns_list li a p{padding: 0 20px;font-family: "맑은 고딕", "Malgun Gothic", "애플 SD 산돌고딕 Neo", "Apple SD Gothic Neo", sans-serif;font-size: 18px;line-height: 28px;}
+
+/* #cnt7 */
+#cnt7{padding: 0 80px;background: #000;font-size: 18px;}
+#cnt7 .inner{padding: 25px 100px 25px 110px;border-bottom: 1px solid #444;height: 30px;line-height: 30px;overflow: hidden;}
+#cnt7 h2{position: absolute;left: 0;top: 25px;width: 100px;background: #000;z-index: 10;}
+#cnt7 h2 a:hover, #cnt7 h2 a:focus{text-decoration: underline;}
+#cnt7 .swiper-container{overflow: visible;}
+#cnt7 .swiper-container::before{content: "";position: absolute;top: 0;left: 50%;width: 1px;height: 30px;background: #fff;}
+#cnt7 .swiper-slide{display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;justify-content: space-between;visibility: hidden;}
+#cnt7 .swiper-slide.swiper-slide-active, #cnt7 .swiper-slide.swiper-slide-next{visibility: visible;}
+#cnt7 .swiper-slide a{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+#cnt7 .swiper-slide span{font-size: 16px;color: #999;}
+#cnt7 .controller{right: -100px;top: 2.5px;padding-right: 2px;width: 75px;height: 25px;background: #000;z-index: 10;}
+#cnt7 .controller div, #cnt7 .controller button{width: 25px;height: 25px;top: 0;position: absolute;margin-top: 0;background: url("../images/icon/main-news-ctrl.png") no-repeat;}
+#cnt7 .controller .swiper-button-prev{left: 0;background-position: 0 0;}
+#cnt7 .controller .swiper-button-next{right: 2px;background-position: 100% 0;}
+#cnt7 .controller div::after{display: none;}
+#cnt7 .controller .stop_play{left: 25px;}
+#cnt7 .controller .btn_stop{background-position: -25px 0;}
+#cnt7 .controller .btn_play{background-position: -50px 0;display: none;}
