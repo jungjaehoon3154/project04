@@ -16,14 +16,6 @@
     <!-- favicon -->
     <link rel="apple-touch-icon" href="img/favicon_icon.ico">
     <link rel="shortcut icon" href="img/favicon_icon.ico">
-    <!-- js -->
-    <script src="js/jquery-1.12.4.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/main.js"></script>  
-    <script>
-        AOS.init();
-
-    </script>
 </head>
 
 <body>
@@ -32,7 +24,7 @@
     </div>
     <div id="wrap"> 
         <header id="header">
-            <div class="header_wrap" data-aos="fade-up">
+            <div class="header_wrap">
                 <h1>
                     <a href="http://jungjaehoon3154.dothome.co.kr">jung's</a>
                 </h1>
@@ -276,6 +268,7 @@
                         </ul>
                     </div>
                 </div>
+                <div id="map" style="width:500px;height:400px;"></div>
                 <div class="top_btn">
                     <a href="#">
                         <span></span>
@@ -287,5 +280,14 @@
         </footer>
         <!-- //footer -->
     </div>
+    <!-- js -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=695a5c55fc17c4e1e18e0141bd05749c"></script>
+    <script src="js/main.js"></script>  
+    <script>
+        AOS.init();
+
+    </script>
 </body>
 </html>
