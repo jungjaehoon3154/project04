@@ -1,502 +1,291 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> HMG 드라이빙 익스피리언스 </title>
-    <link rel="icon" href="assets/images/favicon.ico">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
-    <link rel="stylesheet" href="assets/css/common.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <script src="assets/js/jquery-1.12.4.min.js"></script>
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="assets/js/gsap.min.js"></script>
-    <script src="https://kit.fontawesome.com/be60dfdcd3.js" crossorigin="anonymous"></script>
-    <script src="assets/js/common.js"></script>
-    <script src="assets/js/main.js"></script>
+    <meta name="author" content="jungjaehoon">
+    <meta name="description" content="jungjaehoon portfolio">
+    <meta name="keywords" content="정재훈, 웹퍼블리셔 포트폴리오, web publisher">
+    <title>정재훈 포트폴리오</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" href="img/favicon_icon.ico">
+    <link rel="shortcut icon" href="img/favicon_icon.ico">
+    <!-- js -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>  
+    <script>
+        AOS.init();
+
+    </script>
 </head>
 
 <body>
     <div id="skip">
-        <a href="#container">본문 바로가기</a>
+        <a href="#project">프로젝트 바로가기</a>
     </div>
-    <header id="header" class="d_f bdbox">
-        <h1 class="logo">
-            <a href="#"><img src="assets/images/common/logo-wht.png" alt="HMG 드라이빙 익스피리언스"></a>
-        </h1>
-        <div class="util d_f">
-            <a href="#">회원가입</a>
-            <a href="#">로그인</a>
-            <a href="#" class="btn_all bdbox circle_wrap">
-                <span class="blind">전체메뉴 열기</span>
-                <svg class="circle circle50">
-                    <defs>
-                        <linearGradient id="myGradient1" x1="100%" y1="0" x2="0" y2="0">
-                            <stop offset="0%" stop-color="#ff8933" />
-                            <stop offset="100%" stop-color="#ea2e2e" />
-                        </linearGradient>
-                    </defs>
-                    <circle cx="25" cy="25" r="24" stroke="url('#myGradient1')" />
-                </svg>
-            </a>
-            <nav id="gnb">
-                <h2 class="blind">주메뉴</h2>
-                <ul class="d_f">
-                    <li>
-                        <a href="#">HMG Driving Experience</a>
-                        <ul>
-                            <li><a href="#">About HMG Driving Experience</a></li>
-                            <li><a href="#">SNS Lounge</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Driving Experience</a>
-                        <ul>
-                            <li><a href="#">Hyundai Driving Experience</a></li>
-                            <li><a href="#">GENESIS Driving Experience</a></li>
-                            <li><a href="#">Kia Driving Experience</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Driving Pleasure</a>
-                        <ul>
-                            <li><a href="#">Trackday</a></li>
-                            <li><a href="#">Test-drive</a></li>
-                            <li><a href="#">Off-road</a></li>
-                            <li><a href="#">Taxi-drive</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Hyundai N Festival</a>
-                        <ul>
-                            <li><a href="#">About Hyundai N Festival</a></li>
-                            <li><a href="#">Schedule</a></li>
-                            <li><a href="#">Race Result</a></li>
-                            <li><a href="#">Gallery</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Customer Center</a>
-                        <ul>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Notice</a></li>
-                            <li><a href="#">Q&amp;A</a></li>
-                            <li><a href="#">Location</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            <div class="gnb_bg"></div>
-            <a href="#">예약하기</a>
-        </div>
-    </header>
-    <!-- //header -->
-    <div id="container">
-        <section id="cnt1">
-            <h2 class="blind">HMG 소개</h2>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide slide1">
-                        <video id="mainVideo" poster="assets/images/main/hmg-main-visual-img-001.jpg" autoplay muted
-                            playsinline preload="auto" loop>
-                            <source src="assets/video/hmg-main-visual-movie-001.mp4" type="video/mp4">
-                            <source src="assets/video/hmg-main-visual-movie-001.webm" type="video/webm">
-                            <source src="assets/video/hmg-main-visual-movie-001.ogg" type="video/ogg">
-                        </video>
-                        <div class="txt_wrap p_r">
-                            <h3>HMG<br> 드라이빙 익스피리언스</h3>
-                            <p>현대자동차그룹이 제공하는 주행 체험 프로그램으로<br>
-                                단계별 교육 과정을 통해 드라이빙의 매력을 경험하실 수 있습니다</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide slide2">
-                        <div class="txt_wrap">
-                            <h3>HMG<br> 드라이빙 익스피리언스</h3>
-                            <p>현대자동차그룹이 제공하는 주행 체험 프로그램으로<br>
-                                단계별 교육 과정을 통해 드라이빙의 매력을 경험하실 수 있습니다</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide slide3">
-                        <div class="txt_wrap">
-                            <h3>HMG<br> 드라이빙 익스피리언스</h3>
-                            <p>현대자동차그룹이 제공하는 주행 체험 프로그램으로<br>
-                                단계별 교육 과정을 통해 드라이빙의 매력을 경험하실 수 있습니다</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide slide4">
-                        <div class="txt_wrap">
-                            <h3>HMG<br> 드라이빙 익스피리언스</h3>
-                            <p>현대자동차그룹이 제공하는 주행 체험 프로그램으로<br>
-                                단계별 교육 과정을 통해 드라이빙의 매력을 경험하실 수 있습니다</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide slide5">
-                        <div class="txt_wrap">
-                            <h3>HMG<br> 드라이빙 익스피리언스</h3>
-                            <p>현대자동차그룹이 제공하는 주행 체험 프로그램으로<br>
-                                단계별 교육 과정을 통해 드라이빙의 매력을 경험하실 수 있습니다</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="controller p_a">
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev circle_wrap">
-                        <svg class="circle circle62">
-                            <defs>
-                                <linearGradient id="myGradient2" x1="100%" y1="0" x2="0" y2="0">
-                                    <stop offset="0%" stop-color="#ff8933"/>
-                                    <stop offset="100%" stop-color="#ea2e2e"/>
-                                </linearGradient>
-                            </defs>
-                            <circle cx="31" cy="31" r="30" stroke="url('#myGradient2')"/>
-                        </svg>
-                    </div>
-                    <div class="swiper-button-next circle_wrap">
-                        <svg class="circle circle62">
-                            <defs>
-                                <linearGradient id="myGradient3" x1="100%" y1="0" x2="0" y2="0">
-                                    <stop offset="0%" stop-color="#ff8933"/>
-                                    <stop offset="100%" stop-color="#ea2e2e"/>
-                                </linearGradient>
-                            </defs>
-                            <circle cx="31" cy="31" r="30" stroke="url('#myGradient3')"/>
-                        </svg>
-                    </div>
-                    <button class="btn_stop stop_play circle_wrap" type="button" title="일시정지">
-                        <span class="blind">일시정지</span>
-                        <svg class="circle circle62">
-                            <defs>
-                                <linearGradient id="myGradient4" x1="100%" y1="0" x2="0" y2="0">
-                                    <stop offset="0%" stop-color="#ff8933"/>
-                                    <stop offset="100%" stop-color="#ea2e2e"/>
-                                </linearGradient>
-                            </defs>
-                            <circle cx="31" cy="31" r="30" stroke="url('#myGradient4')"/>
-                        </svg>
-                    </button>
-                    <button class="btn_play stop_play circle_wrap" type="button" title="자동실행">
-                        <span class="blind">자동실행</span>
-                        <svg class="circle circle62">
-                            <defs>
-                                <linearGradient id="myGradient5" x1="100%" y1="0" x2="0" y2="0">
-                                    <stop offset="0%" stop-color="#ff8933"/>
-                                    <stop offset="100%" stop-color="#ea2e2e"/>
-                                </linearGradient>
-                            </defs>
-                            <circle cx="31" cy="31" r="30" stroke="url('#myGradient5')"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </section>
-        <!-- //cnt1 -->
-        <section id="cnt2">
-            <div class="inner align_center">
-                <p class="tit_top" aria-hidden="true">HMG Driving Experience</p>
-                <h2 class="tit">HMG 드라이빙 익스피리언스</h2>
-                <p class="txt">현대자동차그룹(Hyundai Motor Group : HMG)이 국내 최고 수준의 인스트럭터들과 함께 <br>모터스포츠의 노하우를 담아 제공하는 주행 체험프로그램입니다.
-                </p>
-                <a href="" class="btn_more darktype">Learn More</a>
-            </div>
-        </section>
-        <!-- //cnt2 -->
-        <section id="cnt3">
-            <div class="inner align_center">
-                <p class="tit_top" aria-hidden="true">Driving Experience</p>
-                <h2 class="tit">드라이빙 익스피리언스</h2>
-                <p class="txt">안전운전을 위한 드라이빙의 기초부터 짜릿한 서킷 주행 공략까지 <br>클래스에 따라 다양하고 체계적인 프로그램으로 구성된 교육 프로그램</p>
-                <ul class="academy_list rbox">
-                    <li>
-                        <a href="#">
-                            <div>
-                                <h3>현대</h3>
-                                <p>드라이빙 익스피리언스</p>
-                                <span class="btn_more whitetype">Learn More</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div>
-                                <h3>제네시스</h3>
-                                <p>드라이빙 익스피리언스</p>
-                                <span class="btn_more whitetype">Learn More</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div>
-                                <h3>기아</h3>
-                                <p>드라이빙 익스피리언스</p>
-                                <span class="btn_more whitetype">Learn More</span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- //cnt3 -->
-        <section id="cnt4" class="align_center">
-            <div class="inner">
-                <p class="tit_top" aria-hidden="true">Driving Pleasure</p>
-                <h2 class="tit">드라이빙 플레져</h2>
-                <p class="txt">현대/제네시스/기아의 주요 차종을 다양하게 시승할 수 있는 서킷 테스트 드라이브부터 <br>누구나 즐길 수 있는 서킷 택시 체험까지, 스포츠 드라이빙의 즐거움을 느낄 수 있는 프로그램</p>
-            </div>
-            <ul class="pleasure_list rbox">
-                <li>
-                    <a href="#">
-                        <div>
-                            <h3>HMG 오너스 트랙데이</h3>
-                            <p>현대/제네시스/기아자동차 고객이라면 <br>누구나 참여할 수 있는 자차 주행 프로그램</p>
-                            <span class="btn_more whitetype">Learn More</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div>
-                            <h3>HMG 테스트 드라이브</h3>
-                            <p>다양한 차량을 전문 인스트럭터와 함께 <br>서킷에서 체험하는 고객 시승 프로그램</p>
-                            <span class="btn_more whitetype">Learn More</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div>
-                            <h3>오프로드</h3>
-                            <p>특수 제작된 구조물들을 이용해 <br>Off-Road와 유사한 환경을 경험할 수 있는 프로그램</p>
-                            <span class="btn_more whitetype">Learn More</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div>
-                            <h3>택시 드라이브</h3>
-                            <p>전문 드라이버가 운전하는 차량에 동승해 <br>서킷 주행을 짜릿하게 경험할 수 있는 <br>프로그램</p>
-                            <span class="btn_more whitetype">Learn More</span>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <!-- //cnt4 -->
-        <section id="cnt5">
-            <div class="nFestival_bg p_a"></div>
-            <div class="inner">
-                <p class="tit_top" aria-hidden="true">Hyundai N Festival</p>
-                <h2 class="tit">현대 N 페스티벌</h2>
-                <p class="txt">끊임없는 도전 정신과 질주본능을 자극하는 국내 최고 원메이크 레이스</p>
-                <a href="#" class="btn_more whitetype">Learn More</a>
-            </div>
-        </section>
-        <!-- //cnt5 -->
-        <section id="cnt6">
-            <div class="inner align_center">
-                <h2 class="tit">SNS 라운지</h2>
-                <a href="#" class="btn_more whitetype">Learn More</a>
-                <ul class="sns_list d_f">
-                    <li>
-                        <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F266039057172488%2Fposts%2F1199705517139166%2F"
-                            target="_blank" title="새창열기">
-                            <p>다시 시작된 OSL FUTURES 현대 N e-페스티벌. 3라운드 DAY 3 하위 레이스 생중계 현장 잠시후 8시 #본방사수 !! 트위치 : ...</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank" title="새창열기">
-                            <p>다시 시작된 OSL FUTURES 현대 N e-페스티벌. 3라운드 DAY 3 하위 레이스 생중계 현장 잠시후 8시 #본방사수 !! 트위치 : ...</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <p>다시 시작된 OSL FUTURES 현대 N e-페스티벌. 3라운드 DAY 3 하위 레이스 생중계 현장 잠시후 8시 #본방사수 !! 트위치 : ...</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <p>다시 시작된 OSL FUTURES 현대 N e-페스티벌. 3라운드 DAY 3 하위 레이스 생중계 현장 잠시후 8시 #본방사수 !! 트위치 : ...</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <p>다시 시작된 OSL FUTURES 현대 N e-페스티벌. 3라운드 DAY 3 하위 레이스 생중계 현장 잠시후 8시 #본방사수 !! 트위치 : ...</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <p>다시 시작된 OSL FUTURES 현대 N e-페스티벌. 3라운드 DAY 3 하위 레이스 생중계 현장 잠시후 8시 #본방사수 !! 트위치 : ...</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <p>다시 시작된 OSL FUTURES 현대 N e-페스티벌. 3라운드 DAY 3 하위 레이스 생중계 현장 잠시후 8시 #본방사수 !! 트위치 : ...</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p>다시 시작된 OSL FUTURES 현대 N e-페스티벌. 3라운드 DAY 3 하위 레이스 생중계 현장 잠시후 8시 #본방사수 !! 트위치 : ...</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- //cnt6 -->
-        <section id="cnt7">
-            <div class="inner p_r">
-                <h2>
-                    <a href="">NEWS <span aria-hidden="true">&gt;</span></a>
-                </h2>
-                <div class="swiper-container font2">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="#">2021 Hyundai N Festival 개막전(ROUND1) 타임 테이블 2021 Hyundai N Festival 개막전(ROUND1) 타임 테이블</a>
-                            <span>2021.05.04</span>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">2021 Hyundai N Festival 개막전(ROUND1) 타임 테이블</a>
-                            <span>2021.05.04</span>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">2021 Hyundai N Festival 개막전(ROUND1) 타임 테이블</a>
-                            <span>2021.05.04</span>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">2021 Hyundai N Festival 개막전(ROUND1) 타임 테이블</a>
-                            <span>2021.05.04</span>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">2021 Hyundai N Festival 개막전(ROUND1) 타임 테이블</a>
-                            <span>2021.05.04</span>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">2021 Hyundai N Festival 개막전(ROUND1) 타임 테이블</a>
-                            <span>2021.05.04</span>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">2021 Hyundai N Festival 개막전(ROUND1) 타임 테이블</a>
-                            <span>2021.05.04</span>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">2021 Hyundai N Festival 개막전(ROUND1) 타임 테이블</a>
-                            <span>2021.05.04</span>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">2021 Hyundai N Festival 개막전(ROUND1) 타임 테이블</a>
-                            <span>2021.05.04</span>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">2021 Hyundai N Festival 개막전(ROUND1) 타임 테이블</a>
-                            <span>2021.05.04</span>
-                        </div>
-                    </div>
-                    <div class="controller p_a">
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                        <button class="btn_stop stop_play" type="button" title="일시정지"></button>
-                        <button class="btn_play stop_play" type="button" title="자동실행"></button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- //cnt7 --> 
-    </div>
-    <!-- //container -->
-    <footer id="footer">
-        <div class="foot_inner p_r font2">
-            <ul class="foot_link d_f">
-                <li><a href="#">이용약관 안내</a></li>
-                <li><a href="#" class="color_white">개인정보 처리방침</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Q&amp;A</a></li>
-                <li><a href="#">Location</a></li>
-                <li><a href="#">Sitemap</a></li>
-            </ul>
-            <div class="foot_right p_a">
-                <div class="family d_f p_r">
-                    <a href="#" class="btn_fopen p_r" role="button">Family Site</a>
+    <div id="wrap"> 
+        <header id="header">
+            <div class="header_wrap" data-aos="fade-up">
+                <h1>
+                    <a href="http://jungjaehoon3154.dothome.co.kr">jung's</a>
+                </h1>
+                <nav id ="gnb">
                     <ul>
-                        <li><a href="http://www.hyundai.com" target="_blank">현대자동차</a></li>
-                        <li><a href="http://www.genesis.com" target="_blank">제네시스</a></li>
-                        <li><a href="http://www.hyundai.com" target="_blank">현재자동차</a></li>
-                        <li><a href="http://www.genesis.com" target="_blank">제네시스</a></li>
-                        <li><a href="http://www.hyundai.com" target="_blank">현재자동차</a></li>
-                        <li><a href="http://www.genesis.com" target="_blank">제네시스</a></li>
-                        <li><a href="http://www.hyundai.com" target="_blank">현재자동차</a></li>
-                        <li><a href="http://www.genesis.com" target="_blank">제네시스</a></li>
+                        <li><a href="">home</a></li>
+                        <li><a href="">intro</a></li>
+                        <li><a href="">works</a></li>
+                        <li><a href="">contact</a></li>
                     </ul>
-                    <a href="#" class="btn_go">이동</a>
+                </nav>
+                <!--
+                <button type="button" class="toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <div class="gnb_bg">
+                    <nav id="gnb">
+                        <span class="blind">메뉴</span>
+                        <ul>
+                            <li class="menu1"><a href="#home">HOME</a></li>
+                            <li class="menu2"><a href="#introduce">INTRODUCE</a></li>
+                            <li class="menu3"><a href="#project">PROJECT</a></li>
+                            <li class="menu4"><a href="#footer">CONTACT</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <ul class="sns d_f">
-                    <li>
-                        <a href="https://www.facebook.com/hmgdrivingexperience">
-                            <i class="fab fa-facebook-f"></i>
-                            <span class="blind">페이스북</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/playlist?list=PLN_IMWAFOA4-A3LmugYaim8GmTWsRsBNq">
-                            <i class="fab fa-youtube"></i>
-                            <span class="blind">유튜브</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110"><img
-                                src="assets/images/common/logo_webwatch.png"
-                                alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)" title="국가 공인 인증기관 : 웹와치 새창열기"></a>
-                    </li>
-                    <li>
-                        <a href="http://www.i-award.or.kr/Web/Assess/FinalCandidateView.aspx?REG_SEQNO=10168"
-                            title="2020 웹어워드 수상"><img src="assets/images/common/logo-webaward.png" alt="웹어워드"></a>
-                    </li>
-                </ul>
+                -->
             </div>
-            <div class="address">
-                <h2 class="blind">회사별 주소</h2>
-                <div>
-                    <h3>현대자동차(주)</h3>
-                    <p>
-                        <span>대표자명 : 장재훈</span>
-                        <span>사업자등록번호 : 101-81-09147</span>
-                        <span>06797 서울시 서초구 헌릉로 12 (양재동)</span>
-                    </p>
+        </header>
+        <!-- //header -->
+        <main id="contents">
+            <section id="home">
+                <div class="container">
+                    <div class="home_wrap">
+                    <h2 class="blind">홈</h2> 
+                        <div class="main_visual">
+                            <img src="img/main_visual.jpg" alt="">
+                        </div>
+                        <div class="home_txt">
+                            <h2>portfolio</h2>
+                            <strong>안녕하세요. 웹퍼블리셔 정재훈입니다.</strong>
+                            <p>
+                                다양한 디자인을 그에 맞게 구현하고, 트렌드를 맞춰 발전 하는 웹퍼블리셔가 될 수 있도록 노력 하겠습니다.
+                                다양한 디자인을 그에 맞게 구현하고, 트렌드를 맞춰 발전 하는 웹퍼블리셔가 될 수 있도록 노력 하겠습니다.
+                            </p>
+                        </div>
+                        <div class="scroll">
+                            <span>scroll</span>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+            <!-- //home -->
+            <section id="introduce">
+                <div class="introduce_wrap">
+                <h2 class="blind">자기소개</h2>  
+                    <div class="txt_box">
+                        <div class="desc">
+                            <div class="front">
+                                <p>The markup I think is the same as the apartment.</p>
+                            </div>
+                            <div class="back">
+                                <p>제가 생각하는 마크업은 아파트와 같습니다.</p>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <div class="front">
+                                <p>I think that pages that do not understand tags, attributes,</p>
+                            </div>
+                            <div class="back">
+                                <p>태그, 속성, 우선순위를 이해하지 않고 만드는 페이지는</p>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <div class="front">
+                                <p>and priorities are poorly constructed apartments</p>
+                            </div>
+                            <div class="back">
+                                <p>언젠가 허점이 발견되고,</p>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <div class="front">
+                                <p>that will one day discover loopholes and collapse.</p>
+                            </div>
+                            <div class="back">
+                                <p>무너지는 부실공사 아파트라고 생각합니다.</p>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <div class="front">
+                                <p>I will try to do standardized markups even if there are no fancy skills.</p>
+                            </div>
+                            <div class="back">
+                                <p>화려한 기술이 없어도 표준화된 마크업을 할 수 있도록 노력하겠습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+            <!-- //introduce -->
+            <section id="ability">
+                <div class="ability_wrap">
+                <h2 class="blind">능력</h2>    
+                    <div class="ability_box list1">
+                        <div class="txt_wrap">
+                            <div class="txt_box">
+                                <strong>HTML</strong>
+                                <p>
+                                    웹표준과 웹접근성을 준수한<br>
+                                    마크업과 깔끔함 코드를<br>
+                                    작성할려고 노력합니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ability_box list2">
+                        <div class="txt_wrap">
+                            <div class="txt_box">
+                                <strong>CSS</strong>
+                                <p>
+                                    트랜지션과 트랜스폼,<br>
+                                    키프레임을 이용해 간단한<br>
+                                    애니메이션을 만들 수 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ability_box list3">
+                        <div class="txt_wrap">
+                            <div class="txt_box">
+                                <strong>JQUERY</strong>
+                                <p>
+                                    슬라이드와 같은 플러그인<br>
+                                    옵션을 잘 활용하고<br>
+                                    디자인에 맞게 적용 할 수 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </section>
+            <!-- //ability -->
+            <section id="project">
+                <div class="container">
+                    <h2 class="outline">
+                        <span class="inner" data-hover="my project">my project</span>
+                    </h2>
+                    <div class="project_wrap">
+                        <ul>
+                            <li>
+                                <span class="line"></span>
+                                <div class="img_box">
+                                    <p class="works_img"></p>
+                                </div>
+                                <div class="txt_box">
+                                    <h3>hanwha</h3>
+                                    <a href="#">view site</a>
+                                    <p>
+                                        W3C Markup 검사 완료<br>
+                                        px / %를 이용한 반응형 사이트
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="line"></span>
+                                <div class="img_box">
+                                    <p class="works_img"></p>
+                                </div>
+                                <div class="txt_box">
+                                    <h3>hanwha</h3>
+                                    <a href="#">view site</a>
+                                    <p>
+                                        W3C Markup 검사 완료<br>
+                                        px / %를 이용한 반응형 사이트
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="line"></span>
+                                <div class="img_box">
+                                    <p class="works_img"></p>
+                                </div>
+                                <div class="txt_box">
+                                    <h3>hanwha</h3>
+                                    <a href="#">view site</a>
+                                    <p>
+                                        W3C Markup 검사 완료<br>
+                                        px / %를 이용한 반응형 사이트
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>    
+            </section>
+            <!-- //project -->
+        </main>
+        <!-- //main  -->
+        <footer id="footer">
+            <div class="footer_wrap">
+                <div class="container">
+                    <div class="contact_box">
+                        <p>SEND A MESSAGE</p>
+                        <form action="https://formspree.io/f/mgernoep" method="POST">
+                            <input type="text" name="name" class="name" placeholder="name" required>
+                            <input type="email" name="email" class="email" placeholder="email">
+                            <textarea name="message" placeholder="message"></textarea>
+                            <button type="submit" class="submit">SEND</button>
+                        </form>
+                    </div>
+                    <div class="icon_cont"> 
+                        <ul>
+                            <li>
+                                <img src="img/tel.svg" alt="">
+                                <strong>연락방법</strong>
+                                <p>
+                                    010-000-0000<br>
+                                    jungjaehoon3154@naver.com
+                                </p>
+                            </li>
+                            <li>
+                                <img src="img/tel.svg" alt="">
+                                <strong>연락방법</strong>
+                                <p>
+                                    010-000-0000<br>
+                                    jungjaehoon3154@naver.com
+                                </p>
+                            </li>
+                            <li>
+                                <img src="img/tel.svg" alt="">
+                                <strong>연락방법</strong>
+                                <p>
+                                    010-000-0000<br>
+                                    jungjaehoon3154@naver.com
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <h3>(주)이노션</h3>
-                    <p>
-                        <span>대표자명 : 이용우</span>
-                        <span>사업자등록번호 : 220-87-09310</span>
-                        <span>06253 서울시 강남구 강남대로 308 (역삼동)</span>
-                        <span>통신판매업신고 : 제2011-서울강남-01722호</span>
-                        <span>고객센터 : 02-541-3252</span>
-                        <span>Fax : 02-541-3277</span>
-                        <span>E-mail : hmgdrivingexperience@innocean.com</span>
-                        <span>운영 대행 : HMG Driving Experience</span>
-                    </p>
-                </div>
-                <div>
-                    <h3>(주)플레이그라운드코리아</h3>
-                    <p>
-                        <span>대표자명 : 김종남</span>
-                        <span>사업자등록번호 : 316-81-26715</span>
-                        <span>16006 경기도 의왕시 이미로 40 인덕원IT밸리 D동 904호</span>
-                        <span>통신판매업신고 : 제2017-경기의왕-0037호</span>
-                        <span>고객센터 : 070-4773-7670~2</span>
-                        <span>Fax : 070-4773-7675</span>
-                        <span>E-mail : manager@playgroundkorea.com</span>
-                        <span>운영 대행 : Hyundai N Festival</span>
-                    </p>
-                </div>
-            </div>
-            <p class="copy">COPYRIGHT &copy; 2020 HYUNDAI MOTOR COMPANY, ALL RIGHTS RESERVED.</p>
-        </div>
-        <a href="#" class="btn_top p_a">TOP</a>
-    </footer>
-    <!-- //footer -->
-    
+                <div class="top_btn">
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>	
+            </div>  
+        </footer>
+        <!-- //footer -->
+    </div>
 </body>
-
 </html>

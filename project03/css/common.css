@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/* common class */
+.blind { width: 1px; height: 1px; overflow: hidden; border: none; position: absolute; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%); } 
+.clearfix::after { content: ""; display: block; clear: both; } 
+.area { width: 1180px; margin: 0 auto; } 
+
+/* common layout */
+#wrap { margin: 0 70px; } 
+#header div, #content, #banner, #footer { max-width: 1763px; margin: 0 auto; } 
+
+/* header */
+#header { position: relative; background: #fff; z-index: 900; } 
+#header.active::before { content: ""; position: absolute; top: 70px; left: 0; background: #fff; width: 100%; height: 49px; } 
+#header .header_inner { position: relative; height: 69px; max-width: 1780px; min-width: 1180px; border-bottom: 1px solid #ccc; width: 100%; } 
+.logo { position: absolute; left: 0; top: 15px; } 
+a.shortcut { position: absolute; right: 0; top: 18px; width: 100px; height: 34px; line-height: 30px; border: 2px solid #f15b47; font-size: 14px; color: #f15b47; padding-left: 10px; background: url("../img/common/icon_support_arrow.png") no-repeat 66px 12px; box-sizing: border-box; } 
+.shortcut:hover, .shortcut:focus { border-color: #333; } 
+
+/* gnb */
+#gnb { text-align: center; } 
+#gnb > ul > li { display: inline-block; position: relative; } 
+#gnb > ul > li + li { margin-left: 73px; } 
+#gnb ul li a { display: block; } 
+#gnb > ul > li > a { height: 67px; line-height: 67px; border-bottom: 2px solid transparent; font-size: 17px; color: #333; } 
+#gnb > ul > li:hover > a, #gnb > ul > li > a:focus, #gnb > ul > li.on > a { color: #f15b47; border-bottom-color: #f15b47; } 
+#gnb ul li ul { position: absolute; top: 69px; left: 0; width: 260px; height: 49px; line-height: 49px; text-align: left; padding-top: 1px; } 
+#gnb ul li ul li { float: left; margin-right: 36px; } 
+#gnb ul li ul li a { font-size: 14px; color: #888; } 
+#gnb ul li ul li:hover a, #gnb ul li ul li a:focus { color: #333; } 
+
+/* footer */
+#footer { position: relative; border-top: 1px solid #ccc; padding-top: 40px; height: 80px; font-size: 13px; } 
+#footer div { float: left; } 
+#footer div address { padding-bottom: 9px; } 
+#footer ul { float: right; } 
+#footer ul li { float: left; color: #333; } 
+#footer ul li:first-child { padding-right: 9px; border-right: 1px solid #aaa; margin-right: 9px; } 
+.btn_top { position: absolute; right: 0; bottom: 0; width: 44px; height: 44px; border: 1px solid #ccc; font-size: 12px; padding-top: 13px; background: url("../img/common/icon_topBtn.png") no-repeat 50% 8px; } 
+.btn_top:hover, .btn_top:focus { border-color: #f15b47; } 

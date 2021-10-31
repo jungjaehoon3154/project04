@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+@font-face { 
+    font-family: 'NotoSansKR';
+    src: url(../fonts/NotoSansKR-Light.woff) format('woff');
+    font-style: normal;
+    font-weight: 300;
+} 
+@font-face { 
+    font-family: 'NotoSansKR';
+    src: url(../fonts/NotoSansKR-Regular.woff) format('woff');
+    font-style: normal;
+    font-weight: 400;
+} 
+@font-face { 
+    font-family: 'NotoSansKR';
+    src: url(../fonts/NotoSansKR-Medium.woff) format('woff');
+    font-style: normal;
+    font-weight: 500;
+} 
+
+/* tag reset */
+body, h1, h2, h3, h4, h5, h6, p, ul, button, figure { margin: 0; padding: 0; } 
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 300; } 
+ul { list-style: none; } 
+img { border: none; vertical-align: top; } 
+a:link, a:visited, a:hover, a:active { text-decoration: none; color: inherit; } 
+address { font-style: normal; } 
+button { border: none; background: none; cursor: pointer; font-family: inherit; font-size: inherit; color: inherit; } 
+header, nav, section, footer, aside, figure, figcaption { display: block; } 
+
+body { font-family: 'NotoSansKR', "맑은 고딕", "Malgun Gothic", sans-serif; font-size: 16px; color: #666; line-height: 1; } 
+
+#skip a { position: absolute; top: 0; left: -9999px; z-index: 1000; } 
+#skip a:focus { left: 0; background: #999; color: #000; width: 100%; height: 50px; line-height: 50px; text-align: center; font-weight: 500; } 

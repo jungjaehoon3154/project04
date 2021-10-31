@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+#header { position: fixed; top: 0; left: 0; width: 100%; padding: 0 70px; box-sizing: border-box; } 
+
+section.section { background: no-repeat center top; background-size: cover; text-align: center; color: #fff; } 
+#cnt1 { background-image: url("../img/main/title_bg01.jpg"); background-position: 50% 70px; } 
+#cnt2 { background-image: url("../img/main/title_bg02.jpg"); } 
+#cnt3 { background-image: url("../img/main/title_bg03.jpg"); } 
+#cnt4 { background-image: url("../img/main/title_bg04.jpg"); } 
+#cnt5 { background-image: url("../img/main/title_bg05.jpg"); } 
+.cnt { display: inline-block; } 
+.cnt h2 { padding-bottom: 13px; border-bottom: 1px solid rgba(255, 255, 255, .5); margin-bottom: 17px; } 
+.cnt h2 + p { font-size: 44px; letter-spacing: -3px; } 
+.cnt strong { display: block; padding: 10px 0; font-size: 60px; font-weight: 400; letter-spacing: -3px; } 
+.cnt .txt { padding-top: 32px; letter-spacing: -0.8px; line-height: 26px; margin-bottom: 55px; } 
+.btn { display: inline-block; } 
+.btn::after { content: ""; display: block; clear: both; } 
+.btn a { position: relative; float: left; display: table; width: 180px; height: 180px; border: 6px solid #fff; box-sizing: border-box; } 
+.btn a.h48 { height: 48px; } 
+.btn a + a { margin-left: 20px; } 
+.btn a span { display: table-cell; vertical-align: middle; line-height: 1.5; } 
+.btn.effect a::after { content: ""; position: absolute; left: 50%; transform: translateX(-12px); bottom: 70px; width: 24px; height: 24px; background: url("../img/main/icon_plus.png"); opacity: 0; } 
+.btn a:hover, .btn a:focus { border-color: #f15b47; background: #f15b47; } 
+.btn.effect a:hover span, .btn.effect a:focus span { padding-bottom: 50px; } 
+.btn.effect a:hover::after, .btn.effect a:focus::after { bottom: 40px; opacity: 1; } 
+.btn a, .btn.effect a span, .btn.effect a::after { transition: all 0.5s; } 
+
+/* 화살표 애니메이션 */
+.arrow, .arrow::before, .arrow::after { position: absolute; left: 0; right: 0; margin: 0 auto; } 
+.arrow { bottom: 50px; width: 30px; height: 42px; border-radius: 20px; border: 1px solid #fff; } 
+.arrow::before, .arrow::after { content: ""; width: 10px; height: 6px; background: url("../img/common/arrow_wheel.png"); animation: arrow 1s infinite; } 
+.arrow::before { top: 13px; } 
+.arrow::after { top: 20px; animation-delay: 0.5s; } 
+
+@keyframes arrow { 
+    0% { opacity: 0.5; } 
+    100% { opacity: 1; } 
+}
+
+/* 인디케이터 버튼 수정 */
+#fp-nav.fp-right { right: 100px; } 
+#fp-nav ul li:last-child { width: 1px; height: 1px; overflow: hidden; border: none; position: absolute; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%); } 
+#fp-nav ul li + li { margin-top: 14px; } 
+#fp-nav ul li a span { height: 5px; width: 5px; background: #fff; margin: -2.5px 0 0 -2.5px; } 
+#fp-nav ul li a.active span,#fp-nav ul li:hover a.active span, #fp-nav ul li:hover a span { height: 5px; width: 5px; border: 2px solid #f15b47; margin: -4.5px 0 0 -4.5px; background: transparent; } 
+#fp-nav ul li .fp-tooltip { top: -4px; width: 126px; height: 26px; opacity: 0; background: no-repeat right top; line-height: 100; } 
+#fp-nav ul li:nth-child(1) .fp-tooltip { background-image: url("../img/main/nav_txt01.png"); } 
+#fp-nav ul li:nth-child(2) .fp-tooltip { background-image: url("../img/main/nav_txt02.png"); } 
+#fp-nav ul li:nth-child(3) .fp-tooltip { background-image: url("../img/main/nav_txt03.png"); } 
+#fp-nav ul li:nth-child(4) .fp-tooltip { background-image: url("../img/main/nav_txt04.png"); } 
+#fp-nav ul li:nth-child(5) .fp-tooltip { background-image: url("../img/main/nav_txt05.png"); } 
+#fp-nav ul li:hover .fp-tooltip { width: 126px; opacity: 1; } 
+#fp-nav ul li a.active + .fp-tooltip { opacity: 1; } 

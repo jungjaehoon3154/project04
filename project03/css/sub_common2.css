@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+.tit_bg { height: 260px; background: no-repeat center top; text-align: center; color: #fff; } 
+.tit_bg.about { background-image: url("../img/about/tit_head_bg.jpg"); } 
+.tit_bg.program { background-image: url("../img/program/tit_head_bg.jpg"); } 
+.tit_bg.recruit { background-image: url("../img/recruit/tit_head_bg.jpg"); } 
+.tit_bg.qna { background-image: url("../img/qna/tit_head_bg.jpg"); } 
+.tit_bg h2 { padding: 77px 0 24px; font-size: 56px; letter-spacing: -1px; } 
+.tit_bg p { letter-spacing: -0.75px; } 
+
+.sub_tit { border-bottom: 1px solid #aaa; margin-bottom: 67px; } 
+.sub_tit .area{ position: relative; }
+.sub_tit h3 { height: 90px; line-height: 90px; text-align: center; font-size: 34px; letter-spacing: -1.9px; color: #333; } 
+.sub_tit a { position: absolute; top: 20px; height: 50px; line-height: 50px; color: #888; } 
+.sub_tit .btn_prev { left: 0; background: url("../img/common/tit_menu_prev.png") no-repeat; padding-left: 65px; } 
+.sub_tit .btn_next { right: 0; background: url("../img/common/tit_menu_next.png") no-repeat right top; padding-right: 65px; } 
+.sub_tit .btn_prev:hover, .sub_tit .btn_prev:focus { background-image: url("../img/common/tit_menu_prev_on.png"); } 
+.sub_tit .btn_next:hover, .sub_tit .btn_next:focus { background-image: url("../img/common/tit_menu_next_on.png"); } 
+
+/* #banner */
+#banner { margin-top: 64px; height: 220px; } 
+#banner ul li { float: left; width: 50%; } 
+#banner ul li a { display: block; height: 220px; } 
+#banner ul li:nth-child(1) a { background: url("../img/common/aside01.jpg") no-repeat right top; } 
+#banner ul li:nth-child(2) a { background: url("../img/common/aside02.jpg"); } 

@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/* About > 역할 및 서비스 */
+.s_info { position: relative; height: 460px; background: url("../img/about/service_intro_bg.jpg"); margin-bottom: 72px; } 
+.s_info div { position: absolute; width: 360px; height: 320px; padding: 48px 0 30px 30px; background: rgba(241, 91, 71, 0.9); top: 72px; left: 69px; color: #fff; box-sizing: border-box; } 
+.s_info div h4 { margin-bottom: 22px; } 
+.s_info div h4 span { display: inline-block; padding: 13px 0 8px; border-bottom: 2px solid #fff; font-size: 30px; } 
+.s_info div p { line-height: 26px; } 
+
+.s_cnt { border-top: 1px solid #aaa; padding: 70px 0 26px; } 
+.s_cnt h4 { float: left; width: 400px; font-size: 30px; line-height: 42px; letter-spacing: -2px; color: #333; } 
+.s_cnt ul { float: left; width: 780px; } 
+.s_cnt ul li { float: left; width: 50%; box-sizing: border-box; } 
+.txt_list li { position: relative; padding: 0 0 40px 69px; line-height: 24px; } 
+.txt_list li span { position: absolute; top: 4px; left: 0; font-size: 30px; font-weight: 400; color: #f15b47; } 
+.img_list li:nth-child(even) { padding-left: 18px; } 
+.img_list li figcaption { padding: 17px 0 58px; text-align: center; letter-spacing: -1px; } 
