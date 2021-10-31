@@ -1,4 +1,8 @@
 $(document).ready(function(){
+    
+    // fade 애니메이션 제어
+    AOS.init();
+
     // 메뉴 열기
     $('#header .toggle').on('click', function () {
         $(this).toggleClass('active').next().toggleClass('active');

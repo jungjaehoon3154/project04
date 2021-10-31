@@ -1,0 +1,215 @@
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+#header .header_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  height: 100px;
+}
+
+#header .header_wrap h1 {
+  font-family: "Rajdhani";
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.gnb ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gnb ul li:hover > a::after {
+  left: 0;
+  width: 100%;
+}
+
+.gnb ul li a {
+  position: relative;
+  padding: 20px;
+  font-family: "Rajdhani";
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.gnb ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.home_wrap {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home_wrap .main_visual {
+  width: 803px;
+  height: 536px;
+}
+
+.home_wrap .main_visual img {
+  width: 100%;
+}
+
+.home_wrap .home_txt {
+  width: 450px;
+  word-break: keep-all;
+  margin-bottom: 60px;
+}
+
+.home_wrap .home_txt h2 {
+  font-family: "Morganite";
+  font-size: 90px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1vw;
+  font-style: italic;
+}
+
+.home_wrap .home_txt strong {
+  display: inline-block;
+  margin: 50px 0 40px 0;
+  font-size: 20px;
+}
+
+.home_wrap .home_txt p {
+  line-height: 1.5;
+}
+
+.home_wrap .scroll {
+  position: absolute;
+  bottom: 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-box-shadow: -1px 0px 9px;
+          box-shadow: -1px 0px 9px;
+  font-family: "Rajdhani";
+  text-transform: uppercase;
+}
+
+#introduce {
+  overflow: hidden;
+  margin: 8vh 0;
+}
+
+.introduce_wrap .txt_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+.introduce_wrap .desc {
+  opacity: 1;
+  -webkit-transform: translateY(5.2vw);
+          transform: translateY(5.2vw);
+  -webkit-transition: opacity .5s ease, -webkit-transform .5s ease;
+  transition: opacity .5s ease, -webkit-transform .5s ease;
+  transition: opacity .5s ease, transform .5s ease;
+  transition: opacity .5s ease, transform .5s ease, -webkit-transform .5s ease;
+  position: relative;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  width: 100%;
+  height: 8vw;
+  text-align: center;
+}
+
+.introduce_wrap .front,
+.introduce_wrap .back {
+  position: absolute;
+  width: 100%;
+  -webkit-transition: 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  overflow: hidden;
+}
+
+.introduce_wrap .front p,
+.introduce_wrap .back p {
+  word-break: keep-all;
+  font-size: 2.5vw;
+  line-height: 1.5;
+}
+
+.introduce_wrap .front {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.introduce_wrap .back {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.introduce_wrap .desc:hover .front {
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+}
+
+.introduce_wrap .desc:hover .back {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+}
+/*# sourceMappingURL=style.css.map */

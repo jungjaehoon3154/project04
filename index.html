@@ -5,56 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="jungjaehoon">
-    <meta name="description" content="jungjaehoon portfolio">
+    <meta name="description" content="웹퍼블리셔 정재훈의 포트폴리오 사이트 입니다.">
     <meta name="keywords" content="정재훈, 웹퍼블리셔 포트폴리오, web publisher">
     <title>정재훈 포트폴리오</title>
     <!-- css -->
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
     <!-- favicon -->
     <link rel="apple-touch-icon" href="img/favicon_icon.ico">
     <link rel="shortcut icon" href="img/favicon_icon.ico">
 </head>
-
 <body>
-    <div id="skip">
+    <div class="skip">
         <a href="#project">프로젝트 바로가기</a>
     </div>
-    <div id="wrap"> 
-        <header id="header">
+    <div class="wrap">
+        <header id="header" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500" data-aos-easing="ease">
             <div class="header_wrap">
                 <h1>
                     <a href="http://jungjaehoon3154.dothome.co.kr">jung's</a>
                 </h1>
-                <nav id ="gnb">
+                <nav class="gnb">
                     <ul>
-                        <li><a href="">home</a></li>
-                        <li><a href="">intro</a></li>
-                        <li><a href="">works</a></li>
-                        <li><a href="">contact</a></li>
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#introduce">introduce</a></li>
+                        <li><a href="#works">works</a></li>
+                        <li><a href="#contact">contact</a></li>
                     </ul>
                 </nav>
                 <!--
-                <button type="button" class="toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                
-                <div class="gnb_bg">
-                    <nav id="gnb">
-                        <span class="blind">메뉴</span>
-                        <ul>
-                            <li class="menu1"><a href="#home">HOME</a></li>
-                            <li class="menu2"><a href="#introduce">INTRODUCE</a></li>
-                            <li class="menu3"><a href="#project">PROJECT</a></li>
-                            <li class="menu4"><a href="#footer">CONTACT</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                -->
+                    <button type="button" class="toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    
+                    <div class="gnb_bg">
+                        <nav id="gnb">
+                            <span class="blind">메뉴</span>
+                            <ul>
+                                <li class="menu1"><a href="#home">HOME</a></li>
+                                <li class="menu2"><a href="#introduce">INTRODUCE</a></li>
+                                <li class="menu3"><a href="#project">PROJECT</a></li>
+                                <li class="menu4"><a href="#footer">CONTACT</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                        -->
             </div>
         </header>
         <!-- //header -->
@@ -62,30 +60,31 @@
             <section id="home">
                 <div class="container">
                     <div class="home_wrap">
-                    <h2 class="blind">홈</h2> 
-                        <div class="main_visual">
+                        <h2 class="blind">홈</h2>
+                        <div class="main_visual" data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000" data-aos-easing="ease-in-out">
                             <img src="img/main_visual.jpg" alt="">
                         </div>
-                        <div class="home_txt">
+                        <div class="home_txt" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000" data-aos-easing="ease-in-out">
                             <h2>portfolio</h2>
                             <strong>안녕하세요. 웹퍼블리셔 정재훈입니다.</strong>
                             <p>
-                                다양한 디자인을 그에 맞게 구현하고, 트렌드를 맞춰 발전 하는 웹퍼블리셔가 될 수 있도록 노력 하겠습니다.
-                                다양한 디자인을 그에 맞게 구현하고, 트렌드를 맞춰 발전 하는 웹퍼블리셔가 될 수 있도록 노력 하겠습니다.
+                                클라이언트의 다양한 디자인 요구에 맞게 구현하는 동시에 웹표준과 웹접근성을 고려한 마크업, CSS를 위해 계속 공부 중입니다.&nbsp; 
+                                반응형사이트 / 적응형사이트 / 자바스크립트 / 애니메이션을 공부하면서 웹 UI 전문가로 성장하기 위해 노력 중입니다.
                             </p>
                         </div>
-                        <div class="scroll">
+                        <div class="scroll" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="1000" data-aos-easing="ease">
                             <span>scroll</span>
                         </div>
                     </div>
-                </div>    
+                </div>
             </section>
+            <div id="map" style="width:100%;height:350px;"></div>
             <!-- //home -->
             <section id="introduce">
                 <div class="introduce_wrap">
                 <h2 class="blind">자기소개</h2>  
                     <div class="txt_box">
-                        <div class="desc">
+                        <div class="desc" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500" data-aos-easing="ease">
                             <div class="front">
                                 <p>The markup I think is the same as the apartment.</p>
                             </div>
@@ -93,7 +92,7 @@
                                 <p>제가 생각하는 마크업은 아파트와 같습니다.</p>
                             </div>
                         </div>
-                        <div class="desc">
+                        <div class="desc" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500" data-aos-easing="ease">
                             <div class="front">
                                 <p>I think that pages that do not understand tags, attributes,</p>
                             </div>
@@ -101,7 +100,7 @@
                                 <p>태그, 속성, 우선순위를 이해하지 않고 만드는 페이지는</p>
                             </div>
                         </div>
-                        <div class="desc">
+                        <div class="desc" data-aos="fade-up" data-aos-delay="600" data-aos-duration="500" data-aos-easing="ease">
                             <div class="front">
                                 <p>and priorities are poorly constructed apartments</p>
                             </div>
@@ -109,7 +108,7 @@
                                 <p>언젠가 허점이 발견되고,</p>
                             </div>
                         </div>
-                        <div class="desc">
+                        <div class="desc" data-aos="fade-up" data-aos-delay="800" data-aos-duration="500" data-aos-easing="ease">
                             <div class="front">
                                 <p>that will one day discover loopholes and collapse.</p>
                             </div>
@@ -117,7 +116,7 @@
                                 <p>무너지는 부실공사 아파트라고 생각합니다.</p>
                             </div>
                         </div>
-                        <div class="desc">
+                        <div class="desc" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="500" data-aos-easing="ease">
                             <div class="front">
                                 <p>I will try to do standardized markups even if there are no fancy skills.</p>
                             </div>
@@ -283,29 +282,30 @@
     <!-- js -->
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/main.js"></script>  
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=695a5c55fc17c4e1e18e0141bd05749c"></script>
+    <script src="js/main.js"></script>  
     <script>
-        $(document).ready(function () {
-            var container = document.getElementById('map');
-            var options = {
-                center: new kakao.maps.LatLng(35.007783, 126.649091),
-                level: 3
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            mapOption = { 
+                center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+                level: 3 // 지도의 확대 레벨
             };
-
-            var map = new kakao.maps.Map(container, options);
-            // 마커가 표시될 위치입니다 
-            var markerPosition = new kakao.maps.LatLng(35.007783, 126.649091);
-
-            // 마커를 생성합니다
-            var marker = new kakao.maps.Marker({
-                position: markerPosition
-            });
-
-
-            // 마커가 지도 위에 표시되도록 설정합니다
-            marker.setMap(map);
+        
+        var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+        
+        // 마커가 표시될 위치입니다 
+        var markerPosition  = new kakao.maps.LatLng(33.450701, 126.570667); 
+        
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
         });
-    </script>
+        
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker.setMap(map);
+        
+        // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+        // marker.setMap(null);    
+        </script>
 </body>
 </html>
