@@ -286,8 +286,26 @@
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=695a5c55fc17c4e1e18e0141bd05749c"></script>
     <script src="js/main.js"></script>  
     <script>
-        AOS.init();
+        $(document).ready(function () {
+            var container = document.getElementById('map');
+            var options = {
+                center: new kakao.maps.LatLng(35.007783, 126.649091),
+                level: 3
+            };
 
-    </script>
+            var map = new kakao.maps.Map(container, options);
+            // 마커가 표시될 위치입니다 
+            var markerPosition = new kakao.maps.LatLng(35.007783, 126.649091);
+
+            // 마커를 생성합니다
+            var marker = new kakao.maps.Marker({
+                position: markerPosition
+            });
+
+
+            // 마커가 지도 위에 표시되도록 설정합니다
+            marker.setMap(map);
+        });
+    </script> 
 </body>
 </html>
